@@ -4,4 +4,10 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="facebook_login">Facebook Login</string>
+    <string name="login_via_facebook">Login via Facebook</string>
+    <string name="logo">Logo</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
 </resources>
