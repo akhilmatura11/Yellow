@@ -10,4 +10,11 @@
     <string name="login_via_facebook">Login via Facebook</string>
     <string name="logo">Logo</string>
     <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="your_location">Your Location</string>
+    <string name="_129_dhammazedi_road_yangon">129 Dhammazedi Road, Yangon</string>
+    <string name="change">Change</string>
+    <string name="book">Book</string>
+    <string name="title_activity_show_timings">ShowTimings</string>
+    <string name="thugs_of_hindustan">Thugs Of Hindustan</string>
+    <string name="show_timings">Show Timings</string>
 </resources>

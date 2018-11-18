@@ -15,13 +15,13 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:autofillHints="@string/username"
         android:hint="@string/username"
         android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:autofillHints="@string/username" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
         android:id="@+id/editText"
@@ -30,8 +30,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:hint="@string/password"
         android:autofillHints="@string/password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
         app:layout_constraintEnd_toEndOf="@+id/editText2"
@@ -45,11 +45,11 @@
         android:layout_marginStart="105dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="105dp"
+        android:contentDescription="@string/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/logo" />
+        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/button"
@@ -58,11 +58,11 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:textColor="@android:color/white"
         android:backgroundTint="@color/colorPrimary"
-        android:text="@string/login"
         android:clickable="true"
         android:focusable="true"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
@@ -88,17 +88,20 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/facebookImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@string/facebook_login"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/fb_login_btn"
-        android:contentDescription="@string/facebook_login" />
+        app:srcCompat="@drawable/fb_login_btn" />
 
     <TextView
         android:id="@+id/textView3"
@@ -109,7 +112,7 @@
         android:text="@string/login_via_facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/facebookImage" />
 
 
 </android.support.constraint.ConstraintLayout>
