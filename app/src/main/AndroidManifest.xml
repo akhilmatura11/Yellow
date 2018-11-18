@@ -30,6 +30,10 @@
         <activity
             android:name=".ShowTimings"
             android:label="@string/title_activity_show_timings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SeatSelection"
+            android:label="@string/title_activity_seat_selection"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

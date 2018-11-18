@@ -2,6 +2,7 @@ package com.yellowstonebooking;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -15,7 +16,7 @@ import java.util.Objects;
 public class ShowTimings extends AppCompatActivity {
     private Toolbar mToolbar;
     private Spinner mDateSpinner;
-    private RecyclerView mShowRecyclerView;
+    private AutoFitGridRecyclerView mShowRecyclerView;
 
     private ArrayList<String> mDatesList, mShowsList;
 
@@ -90,7 +91,7 @@ public class ShowTimings extends AppCompatActivity {
 
     private void setupRecyclerView() {
         mShowRecyclerView.setHasFixedSize(true);
-        mShowAdapter = new ShowTimingsAdapter(this, mShowsList, mShowRecyclerView);
+        mShowAdapter = new ShowTimingsAdapter(mShowsList, mShowRecyclerView);
         mShowRecyclerView.setAdapter(mShowAdapter);
     }
 

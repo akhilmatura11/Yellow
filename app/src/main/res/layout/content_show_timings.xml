@@ -19,12 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.v7.widget.RecyclerView
+    <com.yellowstonebooking.AutoFitGridRecyclerView
         android:id="@+id/showRecyclerView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/dateSpinner"
-        app:layout_constraintStart_toStartOf="@+id/dateSpinner"
+        android:layout_marginTop="8dp"
+        android:columnWidth="150dp"
+        android:padding="8dp"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dateSpinner" />
 </android.support.constraint.ConstraintLayout>

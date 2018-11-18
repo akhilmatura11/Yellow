@@ -10,25 +10,22 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 public class ShowTimingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-    private Context mContext;
     private ArrayList<String> mShowTimings;
 
-    public ShowTimingsAdapter(Context context, ArrayList<String> showTimings, RecyclerView recyclerView) {
-        mContext = context;
+    public ShowTimingsAdapter(ArrayList<String> showTimings, RecyclerView recyclerView) {
         mShowTimings = showTimings;
     }
 
-    @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        Context context = mContext;
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        Context context = parent.getContext();
 
         View view = LayoutInflater.from(context).inflate(R.layout.show_timings_item, parent, false);
         return new ShowTimingsViewHolder(view, context);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int position) {
+    public void onBindViewHolder( RecyclerView.ViewHolder viewHolder, int position) {
         ShowTimingsViewHolder holder = (ShowTimingsViewHolder) viewHolder;
         holder.setRowDetails(mShowTimings.get(position));
     }

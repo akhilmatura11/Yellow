@@ -17,4 +17,6 @@
     <string name="title_activity_show_timings">ShowTimings</string>
     <string name="thugs_of_hindustan">Thugs Of Hindustan</string>
     <string name="show_timings">Show Timings</string>
+    <string name="title_activity_seat_selection">SeatSelection</string>
+    <string name="screen_this_way">Screen This Way</string>
 </resources>

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ShowTimingsViewHolder extends RecyclerView.ViewHolder {
     private Context mContext;
@@ -22,8 +23,8 @@ public class ShowTimingsViewHolder extends RecyclerView.ViewHolder {
         mShowTimings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(mContext, SeatSelection.class);
-//                mContext.startActivity(intent);
+                Intent intent = new Intent(mContext, SeatSelection.class);
+                mContext.startActivity(intent);
             }
         });
     }
