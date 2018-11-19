@@ -24,13 +24,16 @@
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PaymentActivity" />
-        <activity android:name=".ThankYouActivity"></activity>
+        <activity android:name=".ThankYouActivity"/>
         <activity
             android:name=".HomeScreen"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ShowTimings"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SeatSelection"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
