@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:elevation="4dp"
+    android:focusable="true"
+    android:id="@+id/showTimingCardView"
+    card_view:cardBackgroundColor="@color/whiteDark1"
+    card_view:cardCornerRadius="4dp">
 
-    <android.support.v7.widget.CardView
+    <TextView
+        android:id="@+id/showTimingsTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:padding="8dp"
-        android:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:hint="@string/show_timings"
+        android:text="10:00 am"
+        android:textSize="24sp" />
+</android.support.v7.widget.CardView>
 
-        <TextView
-            android:id="@+id/showTimingsTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="10:00 am"
-            android:hint="@string/show_timings"
-            android:textSize="24sp" />
-    </android.support.v7.widget.CardView>
-
-
-</android.support.constraint.ConstraintLayout>
