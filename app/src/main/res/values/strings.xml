@@ -21,4 +21,6 @@
     <string name="screen_this_way">Screen This Way</string>
     <string name="pay">Pay</string>
     <string name="thank_you">Thank you for using Yellow Stone Myanmar booking services. Your ticket has been sent to your email ID. PNR no. 7267324747.</string>
+    <string name="available">Available</string>
+    <string name="selected">Selected</string>
 </resources>
