@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="2dp">
 
     <ImageView
         android:id="@+id/img_seat"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/available"
         android:src="@drawable/seat_normal" />
@@ -17,7 +18,8 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
         android:contentDescription="@string/selected"
         android:src="@drawable/seat_normal_selected"
-        android:visibility="invisible" />
+        android:visibility="gone" />
 </RelativeLayout>
