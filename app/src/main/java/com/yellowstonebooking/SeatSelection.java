@@ -38,9 +38,9 @@ public class SeatSelection extends AppCompatActivity implements OnSeatSelected {
     private void setupViews() {
         setSupportActionBar(mToolbar);
         mSeatsList = new ArrayList<>();
-    //    mSeatsList.add("l");
+        //    mSeatsList.add("l");
         for (int i = 65; i < 70; i++) {
-            for (int j = 1; j < 7; j++)
+            for (int j = 1; j <= 7; j++)
                 mSeatsList.add((char) i + String.valueOf(j));
         }
 
@@ -57,12 +57,32 @@ public class SeatSelection extends AppCompatActivity implements OnSeatSelected {
                 startActivity(intent);
             }
         });
+        if (adapter.getSelectedItemCount() == 0) {
+            mBookSeatsButton.setEnabled(false);
+            mBookSeatsButton.setAlpha(0.4f);
+            mBookSeatsButton.setText("Book");
+        } else {
+            mBookSeatsButton.setEnabled(true);
+            mBookSeatsButton.setAlpha(1.0f);
+            String message = "Book " + adapter.getSelectedItemCount() + " seats";
+            mBookSeatsButton.setText(message);
+        }
+
     }
 
     @Override
     public void onSeatSelected(int count) {
-        String message = "Book " + count + " seats";
-        mBookSeatsButton.setText(message);
+        if (count==0) {
+            mBookSeatsButton.setEnabled(false);
+            mBookSeatsButton.setAlpha(0.4f);
+            mBookSeatsButton.setText("Book");
+        } else {
+            mBookSeatsButton.setEnabled(true);
+            mBookSeatsButton.setAlpha(1.0f);
+            String message = "Book " + count + " seats";
+            mBookSeatsButton.setText(message);
+        }
+
     }
 
 }
